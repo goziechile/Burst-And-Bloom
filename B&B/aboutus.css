@@ -1,0 +1,62 @@
+
+#about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Fredoka';
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: rgb(247, 161, 175);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content div {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 28px;
+    color: rgb(115, 228, 115); /* Use a child-friendly, warm color */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #333;
+}

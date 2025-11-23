@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burst & Bloom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/2b1bf3fcaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href=""><img src="images/b & b ext logo2.jpg" alt=""></a>
+  </div>
+
+  <nav>
+    <!-- Mobile Hamburger -->
+    <div class="hamburger hide-desktop" id="menu-open">☰</div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu">
+      <li id="menu-close" class="hide-desktop close-btn">×</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="stafffocus.html">Staff</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+
+    <!-- Desktop Menu -->
+    <ul class="desktop-menu hide-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="stafffocus.html">Staff</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text"></div>
+  </section>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="mySlides fade"><img src="images/bby img8.jfif" style="width:100%"></div>
+    <div class="mySlides fade"><img src="images/bby img6.jfif" style="width:100%"></div>
+    <div class="mySlides fade"><img src="images/bby img10.jfif" style="width:100%"></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- Heading + Content -->
+  <div class="heading">
+    <h2 class="label">Resources</h2>
+    <h1 class="title">You need answers</h1>
+    <p class="des">How do I know I can trust anyone with my data and security? With modern cloud based tools, organizations are not only surviving uncertainty, but responding to disruption with innovation and strategic thinking that can drive change outcomes for years to come. Chezzy enterprise professionals are ready to help you leverage and implement a consolidated data platform like Cloud ERP or Analytics Cloud. For more information on this topic or to learn how we can help, contact our team.</p>
+  </div>
+
+  <!-- Journey Section -->
+  <section class="journey">
+    <h1>A wonderful Journey of Discovery Starts here</h1>
+    <p>At Burst & Bloom, we want each of our children to develop and learn in an environment that encourages them to have fun and explore their interests.</p>
+    <button>Book a Tour</button>
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="images/bby img.jfif" alt="">
+      <h3>COVID-19 Safety Guidelines</h3>
+      <p>The safety of our community is a top priority. Learn more about our safety measures.</p>
+    </div>
+    <div class="card">
+      <img src="images/bby img6.jfif" alt="">
+      <h3>Welcome to Burst & Bloom Early Learning</h3>
+      <p>Meet our Director, Oti Esiri, and learn about our commitment to early childhood education.</p>
+    </div>
+    <div class="card">
+      <img src="images/bby img7.jfif" alt="">
+      <h3>Security at Burst & Bloom</h3>
+      <p>Ensuring the safety and security of our children is one of our highest priorities.</p>
+    </div>
+  </section>
+
+  <!-- Classes Info -->
+  <main>
+    <section class="class-info">
+      <h1><span class="word1">Our</span> <span class="word2">Classes</span></h1>
+      <h3>Our childcare has five dedicated Preschool classes and an After-school class.</h3>
+      <p class="description">We provide six classes with twelve to twenty-four children each, aged between three months to eleven years of age.</p>
+      <p class="additional-info">At Burst & Bloom Early Learning, our children experience the very best in childcare as our classrooms come equipped with age-appropriate resources and materials that stimulate learning throughout their earliest years.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook fa-beat-fade" style="color: #1860dc; font-size: xx-large"></i></a>
+      <a href="https://www.instagram.com/burstandbloomcentre"><i class="fa-brands fa-instagram" style="color: #f50f54; font-size: xx-large"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger toggle
+    const mobileMenu = document.getElementById("mobile-menu");
+    const openMenuBtn = document.getElementById("menu-open");
+    const closeMenuBtn = document.getElementById("menu-close");
+
+    openMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.add("open");
+    });
+
+    closeMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+
+    // Slideshow
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+      slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      for (let i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000);
+    }
+    function plusSlides(n){ slideIndex += n - 1; showSlides(); }
+    function currentSlide(n){ slideIndex = n - 1; showSlides(); }
+  </script>
+</body>
+</html>
