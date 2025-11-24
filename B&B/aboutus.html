@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motion</title>
     <link rel="stylesheet" href="index.html">
+     <link rel="stylesheet" href="stafffocus.css">
     <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
 <!-- index.html -->
 <div class="logo"></div>
@@ -15,6 +17,42 @@
 
 </head>
 <body>
+
+
+    <header>
+  <div class="logo">
+    <a href="index.html"><img src="images/b & b ext logo2.jpg" alt=""></a>
+  </div>
+
+  <nav>
+    <!-- Mobile Hamburger -->
+    <div class="hamburger hide-desktop" id="menu-open">☰</div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu">
+      <li id="menu-close" class="hide-desktop close-btn">×</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+
+    <!-- Desktop Menu -->
+    <ul class="desktop-menu hide-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
 
     
     <section id="about-us">
@@ -45,6 +83,41 @@
         </div>
     </section>
 
-    
+
+      <section id="our-staff">
+        <div class="container">
+            <h2>Meet Our Caring Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <img src="images/staff1.jpg" alt="Jane Doe">
+                    <h3>Grandma</h3>
+                    <p>Lead Teacher</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff2.jpg" alt="John Smith">
+                    <h3>First Lady</h3>
+                    <p>Assistant Teacher</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff3.jpg" alt="Emily Johnson">
+                    <h3>Aunty Gbos</h3>
+                    <p>Childcare Director</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff4.jpg" alt="Michael Brown">
+                    <h3>Tina</h3>
+                    <p>Early Childhood Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook fa-beat-fade" style="color: #1860dc; font-size: xx-large"></i></a>
+      <a href="https://www.instagram.com/burstandbloomcentre"><i class="fa-brands fa-instagram" style="color: #f50f54; font-size: xx-large"></i></a>
+    </div>
+  </footer>
 </body>
 </html>

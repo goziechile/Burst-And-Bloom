@@ -7,11 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
   <script src="https://kit.fontawesome.com/2b1bf3fcaf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 <header>
   <div class="logo">
-    <a href=""><img src="images/b & b ext logo2.jpg" alt=""></a>
+    <a href="index.html"><img src="images/b & b ext logo2.jpg" alt=""></a>
+
   </div>
 
   <nav>
@@ -25,9 +27,9 @@
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
       <li><a href="#">Admissions</a></li>
-      <li><a href="stafffocus.html">Staff</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
       <li><a href="#">Resources</a></li>
-      <li><a href="#" class="book-tour-btn">Sign Up</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
     </ul>
 
     <!-- Desktop Menu -->
@@ -36,9 +38,9 @@
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
       <li><a href="#">Admissions</a></li>
-      <li><a href="stafffocus.html">Staff</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
       <li><a href="#">Resources</a></li>
-      <li><a href="#" class="book-tour-btn">Sign Up</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
     </ul>
   </nav>
 </header>
@@ -116,36 +118,9 @@
     </div>
   </footer>
 
-  <script>
-    // Hamburger toggle
-    const mobileMenu = document.getElementById("mobile-menu");
-    const openMenuBtn = document.getElementById("menu-open");
-    const closeMenuBtn = document.getElementById("menu-close");
-
-    openMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.add("open");
-    });
-
-    closeMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-    });
-
-    // Slideshow
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
-      slideIndex++;
-      if (slideIndex > slides.length) slideIndex = 1;
-      for (let i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 4000);
-    }
-    function plusSlides(n){ slideIndex += n - 1; showSlides(); }
-    function currentSlide(n){ slideIndex = n - 1; showSlides(); }
-  </script>
+  <!-- <script>
+   
+  </script> -->
+  <script src="script.js"></script>
 </body>
 </html>

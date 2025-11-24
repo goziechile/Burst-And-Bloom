@@ -1,0 +1,167 @@
+/* styles.css — Full site styles for index, about, programs,
+   admissions, gallery, contact, parents portal (basic).
+   Use this as the main stylesheet for all pages.
+*/
+
+/* ---------- VARIABLES & RESET ---------- */
+:root{
+  --card-bg: #ffffff;
+  --accent:  #6aa84f;
+  --shadow:  0 6px 18px rgba(0,0,0,0.08);
+  --radius:  12px;
+  --max-w:   1100px;
+  /* --dark:    #222; */
+  /* --muted:   #666; */
+  /* --gap:     1.25rem; */
+  /* --glass:   rgba(255,255,255,0.85); */
+  /* --bg-grad: linear-gradient(180deg,#fefefe 0%, #fffaf0 100%); */
+  /* --accent-2: #4a90e2; */
+}
+
+
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Fredoka';
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color:var(--dark);
+  background:var(--bg-grad);
+  line-height:1.45;
+  font-size:16px;
+}
+
+/* ---------- LAYOUT UTILITIES ---------- */
+.container{ 
+  max-width:var(--max-w); 
+  margin:0 auto; 
+  padding:1rem;
+ }
+.row{
+   display:flex; 
+   gap:var(--gap);
+    flex-wrap:wrap; }
+.col{ 
+  flex:1; 
+  min-width:240px;
+ }
+
+/* spacing helpers */
+.mt-1{ 
+  margin-top:0.6rem 
+} 
+.mt-2{ 
+  margin-top:1.1rem 
+}
+.mb-1{ 
+  margin-bottom:0.6rem 
+} 
+.mb-2{ 
+  margin-bottom:1.1rem 
+}
+
+
+
+
+/* ---------- CONTACT / FORMS ---------- */
+/* .contact{ border: 1px solid red; align-items: center; justify-content: center;} */
+form{
+   display:grid; 
+   gap:0.6rem; 
+   max-width:520px; 
+   border: 1px solid red just; 
+  }
+input[
+  type="text"
+  ],
+   input[
+    type="email"
+    ], 
+    input[
+      type="password"
+      ], textarea, select{
+padding:0.6rem; 
+border-radius:10px; 
+border:1px solid rgba(0,0,0,0.08); 
+font-size:0.95rem; 
+background:white;
+}
+textarea{ 
+  min-height:120px; 
+  resize:vertical; 
+}
+.form-row{ 
+  display:flex; 
+  gap:0.6rem; 
+}
+.form-row .col{ 
+  min-width:0; 
+}
+
+/* contact info box */
+.contact-info{ 
+  background:var(--card-bg); 
+  padding:0.9rem; 
+  border-radius:10px; 
+  box-shadow:var(--shadow); 
+}
+
+/* ---------- FOOTER  CHANGE IT OHHHHH ---------- */
+footer{ 
+  padding:1.5rem 0; 
+  text-align:center; 
+  color:var(--muted); 
+  background:transparent 
+}
+
+/* ---------- PARENTS PORTAL (basic) ---------- */
+.portal-wrapper{ 
+  display:flex; 
+  gap:2rem; 
+  align-items:flex-start; 
+  justify-content:center; 
+  padding:1rem 0; 
+}
+.portal-card{ 
+  background:var(--card-bg); 
+  padding:1.25rem; 
+  border-radius:12px; 
+  box-shadow:var(--shadow); 
+  width:100%; 
+  max-width:560px; }
+.login-form h2{ 
+  margin-top:0 
+}
+.login-input{ 
+  display:flex; 
+  flex-direction:column; 
+  gap:0.5rem; 
+  margin-bottom:1rem; 
+}
+.small{ 
+  font-size:0.9rem; 
+  color:var(--muted) 
+}
+
+
+
+/* ---------- MEDIA & RESPONSIVE ---------- */
+@media (max-width:980px){
+  .dashboard{ grid-template-columns: 1fr }
+ /* .hero{ flex-direction:column; text-align:center }
+  .features{ grid-template-columns:repeat(2,1fr) }
+  .program-list{ grid-template -columns:repeat(2,1fr) }
+  .gallery-grid{ grid-template-columns:repeat(3,1fr) } */
+  /* .about{ grid-template-columns: 1fr }
+  .admissions .doc-list{ grid-template-columns:1fr } */
+}
+
+@media (max-width:680px){
+   .container{ padding:0.8rem }
+}
+
+/* ---------- PRINT / ADA ---------- */
+@media print{
+  .no-print{ display:none !important }
+  a[href]:after{ content: ""; }
+}

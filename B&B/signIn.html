@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portal/Logn Page - B&B EXP Preschool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signin.css">
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+ <header>
+  <div class="logo">
+    <a href="index.html"><img src="images/b & b ext logo2.jpg" alt=""></a>
+
+  </div>
+
+  <nav>
+    <!-- Mobile Hamburger -->
+    <div class="hamburger hide-desktop" id="menu-open">☰</div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu">
+      <li id="menu-close" class="hide-desktop close-btn">×</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+
+    <!-- Desktop Menu -->
+    <ul class="desktop-menu hide-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="section-title">
+       <h1>
+            <span class="word1">Portal</span> /
+            <span class="word2">Login</span>
+        </h1>
+      <p class="small">Should be a Secure area for parent updates, reports, attendance and payments and Shiiii.</p>
+    </section>
+
+    <div class="portal-wrapper">
+      <!-- Login Card -->
+      <div class="portal-card login-card">
+        <h2>
+             <span class="word1">Portal</span> /
+            <span class="word2">Login</span>
+            (Demo not sure yet omo)</h2>
+        <p class="small">Use <strong>parent@example.com</strong> and <strong>demo123</strong> to view the demo dashboard.</p>
+
+        <form id="portal-login-form" class="login-form" autocomplete="off">
+          <div class="login-input">
+            <label class="small">Email</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+          <div class="login-input">
+            <label class="small">Password</label>
+            <input type="password" placeholder="Password" required>
+          </div>
+
+          <div style="display:flex; gap:0.5rem; align-items:center; justify-content:space-between;">
+            <button class="btn" type="submit">Login</button>
+            <a href="contact.html" class="small" style="align-self:center">Need help?</a>
+          </div>
+        </form>
+
+        <hr style="margin:1rem 0; border:none; border-top:1px solid #f0f0f0">
+        <div class="small">
+          <strong>Note:</strong> This portal is a static demo. To enable real parent accounts you will need:
+          <ul style="margin:0.4rem 0 0 1.1rem; padding:0; color:var(--muted)">
+            <li>User authentication (email/password)</li>
+            <li>Secure storage of student records (database)</li>
+            <li>Payment gateway integration (Paystack/Flutterwave, Stripe)</li>
+            <li>SSL on hosting for security</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dashboard card is created by script.js after successful demo login -->
+    </div>
+
+    <section style="margin-top:2rem;">
+      <div class="card">
+        <h3>Parents Portal Features (what to implement)</h3>
+        <ul style="margin-left:1.1rem; color:var(--muted)">
+          <li>Secure login for parents & password reset</li>
+          <li>Student profile with photo, class, DOB</li>
+          <li>Attendance records and daily log</li>
+          <li>Announcements and event calendar</li>
+          <li>Payment history & online payment</li>
+          <li>Messaging between parents and teachers</li>
+          <li>Downloadable reports (PDF)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:2rem;">
+      <div class="card">
+        <h3>The Other Half Of It Knowing What's Up</h3>
+        <ul style="margin-left:1.1rem; color:var(--muted)">
+          <li>Secure login for parents & password reset</li>
+          <li>Student profile with photo, class, DOB</li>
+          <li>Attendance records and daily log</li>
+          <li>Announcements and event calendar</li>
+          <li>Payment history & online payment</li>
+          <li>Messaging between parents and teachers</li>
+          <li>Downloadable reports (PDF)</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook fa-beat-fade" style="color: #1860dc; font-size: xx-large"></i></a>
+      <a href="https://www.instagram.com/burstandbloomcentre"><i class="fa-brands fa-instagram" style="color: #f50f54; font-size: xx-large"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

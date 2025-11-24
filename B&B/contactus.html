@@ -5,15 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+
+ <header>
+  <div class="logo">
+    <a href="index.html"><img src="images/b & b ext logo2.jpg" alt=""></a>
+  </div>
+
+  <nav>
+    <!-- Mobile Hamburger -->
+    <div class="hamburger hide-desktop" id="menu-open">☰</div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu">
+      <li id="menu-close" class="hide-desktop close-btn">×</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+
+    <!-- Desktop Menu -->
+    <ul class="desktop-menu hide-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <!-- <li><a href="stafffocus.html">Staff</a></li> -->
+      <li><a href="#">Resources</a></li>
+      <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    
     <div class="container">
         <h1>
             <span class="word1">Contact</span> 
             <span class="word2">Us</span>
         </h1>
-      <form action="">contact.form
+      <form action="">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
@@ -36,5 +75,12 @@
         });
 
          </script>
+         <script src="script.js"></script>
+         <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook fa-beat-fade" style="color: #1860dc; font-size: xx-large"></i></a>
+      <a href="https://www.instagram.com/burstandbloomcentre"><i class="fa-brands fa-instagram" style="color: #f50f54; font-size: xx-large"></i></a>
+    </div>
+  </footer>
 </body>
 </html>

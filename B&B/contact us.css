@@ -4,10 +4,10 @@ body{
     padding: 0;
 }
 .container{
-    max-width: 400px;
+    max-width: 450px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: ;
+    padding: 40px;
+    /* background-color: ; */
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(red, green, blue);
@@ -48,6 +48,7 @@ button[type="submit"]:hover{
 @media (max-width:786px){
     .container {
         margin: 20px auto;
+        max-width: 450px;
     }
 }
 @media (max-width:480px){
