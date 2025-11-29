@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="signin.css">
    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"> 
+   <script src="https://kit.fontawesome.com/2b1bf3fcaf.js" crossorigin="anonymous"></script>
 </head>
 <body>
  <header>
@@ -25,9 +26,9 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="#">Admissions</a></li>
+      <li><a href="programs.html">Programs</a></li>
       <!-- <li><a href="stafffocus.html">Staff</a></li> -->
-      <li><a href="#">Resources</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
     </ul>
 
@@ -36,9 +37,9 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="#">Admissions</a></li>
+      <li><a href="programs.html">Programs</a></li>
       <!-- <li><a href="stafffocus.html">Staff</a></li> -->
-      <li><a href="#">Resources</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="signIn.html" class="book-tour-btn">Sign Up</a></li>
     </ul>
   </nav>
@@ -65,22 +66,22 @@
         <form id="portal-login-form" class="login-form" autocomplete="off">
           <div class="login-input">
             <label class="small">Email</label>
-            <input type="email" placeholder="your@email.com" required>
+            <input type="email" placeholder="burst&bloom@email.com" required>
           </div>
           <div class="login-input">
             <label class="small">Password</label>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="1234abcd" required>
           </div>
 
           <div style="display:flex; gap:0.5rem; align-items:center; justify-content:space-between;">
             <button class="btn" type="submit">Login</button>
-            <a href="contact.html" class="small" style="align-self:center">Need help?</a>
+            <a href="contactus.html" class="small" style="align-self:center">Need help?</a>
           </div>
         </form>
 
         <hr style="margin:1rem 0; border:none; border-top:1px solid #f0f0f0">
         <div class="small">
-          <strong>Note:</strong> This portal is a static demo. To enable real parent accounts you will need:
+          <strong>Note:</strong> This portal is a static demo naa demo broooo. To enable real parent accounts you will need:
           <ul style="margin:0.4rem 0 0 1.1rem; padding:0; color:var(--muted)">
             <li>User authentication (email/password)</li>
             <li>Secure storage of student records (database)</li>
@@ -93,7 +94,9 @@
       <!-- Dashboard card is created by script.js after successful demo login -->
     </div>
 
-    <section style="margin-top:2rem;">
+<!-- <section 
+    
+    style="margin-top:2rem;">
       <div class="card">
         <h3>Parents Portal Features (what to implement)</h3>
         <ul style="margin-left:1.1rem; color:var(--muted)">
@@ -106,31 +109,42 @@
           <li>Downloadable reports (PDF)</li>
         </ul>
       </div>
-    </section>
-
-    <section style="margin-top:2rem;">
-      <div class="card">
-        <h3>The Other Half Of It Knowing What's Up</h3>
-        <ul style="margin-left:1.1rem; color:var(--muted)">
-          <li>Secure login for parents & password reset</li>
-          <li>Student profile with photo, class, DOB</li>
-          <li>Attendance records and daily log</li>
-          <li>Announcements and event calendar</li>
-          <li>Payment history & online payment</li>
-          <li>Messaging between parents and teachers</li>
-          <li>Downloadable reports (PDF)</li>
-        </ul>
-      </div>
-    </section>
-
+    </section> -->
   </main>
 
-  <footer>
+   <footer>
+  <div class="footer-content">
+
+    <div class="footer-section">
+      <h3>Burst & Bloom Early Learning</h3>
+      <p>Growing bright minds, one child at a time.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 123 Bloom Street, Lagos, Nigeria</p>
+      <p><strong>Phone:</strong> +234 812 345 6789</p>
+      <p><strong>Email:</strong> info@burstandbloom.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <a href="aboutus.html">About Us</a><br>
+      <a href="programs.html">Programs</a><br>
+      <a href="contactus.html">Contact Us</a><br>
+      <a href="signIn.html">Parent Portal</a>
+    </div>
+
     <div class="icons">
       <a href=""><i class="fa-brands fa-facebook fa-beat-fade" style="color: #1860dc; font-size: xx-large"></i></a>
       <a href="https://www.instagram.com/burstandbloomcentre"><i class="fa-brands fa-instagram" style="color: #f50f54; font-size: xx-large"></i></a>
     </div>
-  </footer>
+  </div>
+
+  <p class="copyright">
+    © 2025 Burst & Bloom Early Learning — All Rights Reserved
+  </p>
+</footer>
 
   <script src="script.js"></script>
 </body>
