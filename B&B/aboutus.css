@@ -200,3 +200,18 @@ h2 {
         width: 80%;
     }
 }
+
+
+/* Add a style for the optional info icon */
+.staff-info-icon {
+    margin-top: 10px;
+    color: rgb(247, 161, 175); /* Match your header pink */
+    font-size: 1.5em;
+}
+
+/* Add some padding/style for the bio text in the modal */
+.staff-bio {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #444;
+}

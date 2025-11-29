@@ -60,7 +60,8 @@ header {
   font-size: 34px;
   cursor: pointer;
   line-height: 1;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  display: none;
 }
 
 .hamburger.hidden{
@@ -165,14 +166,22 @@ header {
 
 /* MOBILE RULES */
 @media (max-width: 900px) {
-  .desktop-menu {
-    display: none;
-  }
   .hide-desktop {
-    display: block;
+    display: block !important;
   }
-  .hide-mobile {
-    display: none;
+ .hide-mobile, .desktop-menu {
+    display: none !important;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 22px;
+    z-index: 200000;
+    background: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: block;
   }
 }
 
